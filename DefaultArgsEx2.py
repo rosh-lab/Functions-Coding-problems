@@ -1,0 +1,16 @@
+#Program for demonstrating Default arguments technique.
+def insertstuddetails(sno,sname,marks,crs="PYTHON"): # Function definition with  positional formal parametre & default arguments and it is always recommed to write default argu  after possitional arguments only
+    print("\t{}\t\t{}\t\t{}\t\t{}".format(sno,sname,marks,crs))
+#MAin program..
+print("*"*50)
+print("SNO\t\tNAME\t\tMARKS\tCOURSE")
+print("*"*50)
+insertstuddetails(100,"RS",3.4) #Function call with positional arguments
+insertstuddetails(200,"TR",2.3) #Function call with positional arguments
+insertstuddetails(300,"MR",4.7) #Function call with positional arguments
+insertstuddetails(400,"DR",1.7) #Function call with positional arguments
+insertstuddetails(sname="KN",marks=3.1,sno=120) #Function call with keyword arguments..
+insertstuddetails(500,"SR",0.1 ,"JAVA") #Function call with positional arguments
+insertstuddetails(600,"BR",0.3)  #Function call with positional arguments
+insertstuddetails(sname="RS",sno=123,marks=1.3,crs="DJANGO") #Function call with keyword arguments
+print("*"*50)
